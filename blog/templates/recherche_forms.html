@@ -1,0 +1,12 @@
+<form method="get" action="{% url 'recherche_forms'%}" class="search_form">
+  {% csrf_token %}
+        <div class='row'>
+          <div class="col-lg-6">
+            <input type="search" class="form-control" name="query"  placeholder="Nom du propriétaire">
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-outline-success" type='submit'>RECHERCHE</button>
+          </div>
+        </div>
+</form>
+
